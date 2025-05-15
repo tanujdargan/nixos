@@ -62,6 +62,13 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  # Garbage Collection
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 15d";
+  };
+
   # Power Management for Laptop - Now managed in laptop-power.nix
   # services.tlp.enable = true;
   # services.tlp.settings = {
