@@ -163,7 +163,7 @@
   rustup
   neofetch
   acpi
-
+  ollama-cuda
   (python3.withPackages
   (ps:
     with ps; [
